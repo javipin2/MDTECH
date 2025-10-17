@@ -1,0 +1,108 @@
+/* ========================================
+   OPTIMIZACIONES DE SCROLL - ANDRARA.COM
+   ======================================== */
+
+/* 1. OPTIMIZACIÓN DE ANIMACIONES DE SCROLL */
+.elementor-invisible {
+    opacity: 0.3 !important;
+    transform: translateY(20px) !important;
+    transition: all 0.2s ease-out !important;
+    will-change: transform, opacity !important;
+}
+
+/* Precarga de animaciones */
+.elementor-invisible.preloaded {
+    opacity: 0.5 !important;
+    transform: translateY(15px) !important;
+}
+
+.elementor-invisible.elementor-animation-fadeInUp {
+    opacity: 0.3 !important;
+    transform: translateY(30px) !important;
+}
+
+.elementor-invisible.elementor-animation-fadeInRight {
+    opacity: 0.3 !important;
+    transform: translateX(30px) !important;
+}
+
+.elementor-invisible.elementor-animation-fadeInLeft {
+    opacity: 0.3 !important;
+    transform: translateX(-30px) !important;
+}
+
+
+
+/* Precarga anticipada de secciones */
+.elementor-section.preloaded {
+    opacity: 0.8 !important;
+}
+
+.elementor-element.preloaded {
+    opacity: 0.7 !important;
+}
+
+/* 3. OPTIMIZACIÓN DE BACKGROUNDS */
+.e-con.e-parent:not(.e-lazyloaded) {
+    background-image: none !important;
+}
+
+.e-con.e-parent.e-lazyloaded {
+    background-image: var(--background-image) !important;
+    transition: background-image 0.3s ease !important;
+}
+
+/* 4. OPTIMIZACIÓN MÓVIL DE SCROLL */
+@media (max-width: 767px) {
+    .elementor-invisible {
+        opacity: 0.5 !important;
+        transform: translateY(15px) !important;
+    }
+    
+    .elementor-invisible.elementor-animation-fadeInUp {
+        transform: translateY(20px) !important;
+    }
+    
+    .elementor-invisible.elementor-animation-fadeInRight {
+        transform: translateX(20px) !important;
+    }
+    
+    .elementor-invisible.elementor-animation-fadeInLeft {
+        transform: translateX(-20px) !important;
+    }
+}
+
+/* 5. OPTIMIZACIÓN DE DISPOSITIVOS MUY PEQUEÑOS */
+@media (max-width: 480px) {
+    .elementor-invisible {
+        opacity: 0.7 !important;
+        transform: translateY(10px) !important;
+    }
+    
+    .elementor-invisible.elementor-animation-fadeInUp {
+        transform: translateY(15px) !important;
+    }
+    
+    .elementor-invisible.elementor-animation-fadeInRight {
+        transform: translateX(15px) !important;
+    }
+    
+    .elementor-invisible.elementor-animation-fadeInLeft {
+        transform: translateX(-15px) !important;
+    }
+}
+
+
+/* 7. PRELOAD DE IMÁGENES */
+.elementor-widget-image img {
+    loading: eager !important;
+}
+
+/* 8. OPTIMIZACIÓN DE CONTENEDORES */
+.elementor-container {
+    contain: layout !important;
+}
+
+/* ========================================
+   FIN DE OPTIMIZACIONES DE SCROLL
+   ======================================== */

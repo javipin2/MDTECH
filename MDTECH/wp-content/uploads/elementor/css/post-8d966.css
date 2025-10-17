@@ -1,0 +1,246 @@
+.elementor-kit-8 {
+    --e-global-color-primary: #FA4C7B;
+    --e-global-color-secondary: #F49028;
+    --e-global-color-text: #D5E8EB;
+    --e-global-color-accent: #CADADD;
+    --e-global-color-701f166: #1E1E37;
+    --e-global-color-c80b9f4: #050527;
+    --e-global-color-fb5a382: #E9FCFF;
+    --e-global-color-2086d13: #205696;
+    --e-global-color-da829a6: #FACE36;
+    --e-global-color-391081d: #DDD8E9;
+    --e-global-color-aaef689: #FFFFFF00;
+    --e-global-color-d1bfa46: #98C0DFB5;
+    --e-global-color-0304463: #E9FCFF0F;
+    --e-global-typography-primary-font-family: "Big Shoulders Display";
+    --e-global-typography-primary-font-weight: 900;
+    --e-global-typography-primary-text-transform: uppercase;
+    --e-global-typography-primary-line-height: 1em;
+    --e-global-typography-primary-letter-spacing: 0.5px;
+    --e-global-typography-secondary-font-family: "Big Shoulders Display";
+    --e-global-typography-secondary-font-weight: 700;
+    --e-global-typography-secondary-line-height: 1em;
+    --e-global-typography-secondary-letter-spacing: 0.75px;
+    --e-global-typography-text-font-family: "Work Sans";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Work Sans";
+    --e-global-typography-accent-font-weight: 600;
+    --e-global-typography-4fc3931-font-family: "Work Sans";
+    --e-global-typography-4fc3931-font-size: 14px;
+    --e-global-typography-4fc3931-font-weight: 500;
+    --e-global-typography-4fc3931-text-transform: capitalize;
+    --e-global-typography-4fc3931-line-height: 1.2em;
+    --e-global-typography-4fc3931-letter-spacing: 0.4px;
+    --e-global-typography-4cd8123-font-family: "Big Shoulders Display";
+    --e-global-typography-4cd8123-font-size: 90px;
+    --e-global-typography-4cd8123-font-weight: 900;
+    --e-global-typography-4cd8123-text-transform: uppercase;
+    --e-global-typography-4cd8123-line-height: 0.87em;
+    background-color: var(--e-global-color-701f166);
+    color: var(--e-global-color-text);
+    font-size: 17px;
+    line-height: 1.4em;
+    letter-spacing: 0px;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
+
+.elementor-kit-8 button,
+.elementor-kit-8 input[type="button"],
+.elementor-kit-8 input[type="submit"],
+.elementor-kit-8 .elementor-button {
+    background-color: transparent;
+    font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+    font-weight: var(--e-global-typography-accent-font-weight);
+    color: var(--e-global-color-701f166);
+    background-image: linear-gradient(45deg, var(--e-global-color-secondary) 0%, var(--e-global-color-primary) 100%);
+    border-radius: 50px 50px 50px 50px;
+    padding: 15px 25px 15px 25px;
+}
+
+.elementor-kit-8 button:hover,
+.elementor-kit-8 button:focus,
+.elementor-kit-8 input[type="button"]:hover,
+.elementor-kit-8 input[type="button"]:focus,
+.elementor-kit-8 input[type="submit"]:hover,
+.elementor-kit-8 input[type="submit"]:focus,
+.elementor-kit-8 .elementor-button:hover,
+.elementor-kit-8 .elementor-button:focus {
+    background-color: transparent;
+    color: var(--e-global-color-701f166);
+    background-image: linear-gradient(45deg, var(--e-global-color-secondary) 60%, var(--e-global-color-primary) 100%);
+}
+
+.elementor-kit-8 p {
+    margin-block-end: 5px;
+}
+
+.elementor-kit-8 a {
+    font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+    font-weight: var(--e-global-typography-accent-font-weight);
+}
+
+.elementor-kit-8 h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.elementor-kit-8 h2 {
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.elementor-kit-8 h3 {
+    font-size: 52px;
+    text-transform: uppercase;
+}
+
+.elementor-kit-8 h4 {
+    font-size: 33px;
+    text-transform: uppercase;
+}
+
+.elementor-kit-8 h5 {
+    font-size: 22px;
+}
+
+.elementor-kit-8 h6 {
+    font-size: 17px;
+}
+
+.elementor-section.elementor-section-boxed>.elementor-container {
+    max-width: 85vw;
+}
+
+.e-con {
+    --container-max-width: 85vw;
+    --container-default-padding-top: 5px;
+    --container-default-padding-right: 5px;
+    --container-default-padding-bottom: 5px;
+    --container-default-padding-left: 5px;
+}
+
+.elementor-widget:not(:last-child) {
+    --kit-widget-spacing: 5px;
+}
+
+.elementor-element {
+    --widgets-spacing: 5px 5px;
+    --widgets-spacing-row: 5px;
+    --widgets-spacing-column: 5px;
+}
+
+
+h1.entry-title {
+    display: var(--page-title-display);
+}
+
+.site-header .site-branding {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.site-header {
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.site-footer .site-branding {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+@media(min-width:2400px) {
+    .elementor-kit-8 h1 {
+        font-size: 3.9em;
+    }
+
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 1620px;
+    }
+
+    .e-con {
+        --container-max-width: 1620px;
+    }
+}
+
+@media(max-width:1680px) {
+    .elementor-kit-8 h1 {
+        font-size: 50.04px;
+    }
+}
+
+@media(max-width:1425px) {
+    .elementor-kit-8 h1 {
+        font-size: 37.33px;
+    }
+
+    .elementor-kit-8 h2 {
+        font-size: 33.18px;
+    }
+
+    .elementor-kit-8 h3 {
+        font-size: 27.65px;
+    }
+
+    .elementor-kit-8 h4 {
+        font-size: 23.04px;
+    }
+
+    .elementor-kit-8 h5 {
+        font-size: 19.2px;
+    }
+
+    .elementor-kit-8 h6 {
+        font-size: 16px;
+    }
+
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 90vw;
+    }
+
+    .e-con {
+        --container-max-width: 90vw;
+    }
+}
+
+@media(max-width:1024px) {
+    .elementor-kit-8 {
+        font-size: 16px;
+    }
+
+    .elementor-kit-8 h1 {
+        font-size: 37.78px;
+    }
+}
+
+@media(max-width:767px) {
+    .elementor-kit-8 {
+        font-size: 16px;
+    }
+
+    .elementor-kit-8 h1 {
+        font-size: 26.49px;
+    }
+
+    .elementor-kit-8 h2 {
+        font-size: 22px;
+    }
+
+    .elementor-kit-8 h3 {
+        font-size: 20px;
+    }
+
+    .elementor-kit-8 h4 {
+        font-size: 18px;
+    }
+
+    .elementor-kit-8 h5 {
+        font-size: 16px;
+    }
+
+    .elementor-kit-8 h6 {
+        font-size: 14px;
+    }
+}

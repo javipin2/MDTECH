@@ -1,0 +1,277 @@
+/* ========================================
+   OPTIMIZACIONES DE PERFORMANCE - ANDRARA.COM
+   ======================================== */
+
+/* 1. OPTIMIZACIÓN DE ANIMACIONES GLOBALES */
+:root {
+    --ultra-fast-transition: 0.1s;
+    --fast-transition: 0.15s;
+    --normal-transition: 0.2s;
+    --slow-transition: 0.25s;
+}
+
+
+/* Optimizar animaciones de entrada */
+.elementor-invisible {
+    animation-duration: 0.2s !important;
+    animation-timing-function: ease-out !important;
+}
+
+/* Reducir delays de animación globalmente */
+.elementor-invisible[data-settings*="animation_delay"] {
+    animation-delay: 0.1s !important;
+}
+
+/* 2. OPTIMIZACIÓN DE ESPACIADO GLOBAL */
+.elementor-section {
+    padding: 10px 0 !important;
+    margin: 5px 0 !important;
+}
+
+.elementor-container {
+    padding: 0 8px !important;
+}
+
+.elementor-element {
+    padding: 6px !important;
+    margin: 6px 0 !important;
+}
+
+/* 3. OPTIMIZACIÓN MÓVIL AVANZADA */
+@media (max-width: 767px) {
+    /* Eliminar espacios innecesarios */
+    .elementor-section:empty,
+    .elementor-column:empty,
+    .elementor-element:empty {
+        display: none !important;
+    }
+    
+    /* Reducir espaciado al mínimo */
+    .elementor-section {
+        padding: 5px 0 !important;
+        margin: 3px 0 !important;
+    }
+    
+    .elementor-container {
+        padding: 0 5px !important;
+    }
+    
+    .elementor-element {
+        padding: 3px !important;
+        margin: 3px 0 !important;
+    }
+    
+    /* Optimizar columnas */
+    .elementor-column {
+        padding: 2px !important;
+    }
+    
+    /* Reducir gaps */
+    .elementor-column-gap-default {
+        gap: 3px !important;
+    }
+    
+    .elementor-column-gap-narrow {
+        gap: 2px !important;
+    }
+    
+    .elementor-column-gap-extended {
+        gap: 4px !important;
+    }
+    
+    .elementor-column-gap-wide {
+        gap: 5px !important;
+    }
+    
+    .elementor-column-gap-wider {
+        gap: 6px !important;
+    }
+    
+    /* Optimizar contenedores flex */
+    .e-con-inner {
+        gap: 3px !important;
+    }
+    
+    /* Reducir espaciado de widgets */
+    .elementor-widget:not(:last-child) {
+        margin-bottom: 5px !important;
+    }
+    
+    .elementor-widget-heading {
+        margin-bottom: 3px !important;
+    }
+    
+    .elementor-widget-text-editor {
+        margin-bottom: 5px !important;
+    }
+    
+    .elementor-widget-image {
+        margin-bottom: 6px !important;
+    }
+    
+    /* Optimizar botones */
+    .elementor-button {
+        padding: 8px 16px !important;
+        font-size: 13px !important;
+        margin: 3px 0 !important;
+    }
+    
+    /* Optimizar tipografía */
+    .elementor-heading-title {
+        font-size: 1.3em !important;
+        line-height: 1.2 !important;
+        margin-bottom: 5px !important;
+    }
+    
+    .elementor-text-editor {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+    }
+}
+
+/* 4. OPTIMIZACIÓN DE DISPOSITIVOS MUY PEQUEÑOS */
+@media (max-width: 480px) {
+    .elementor-section {
+        padding: 3px 0 !important;
+        margin: 2px 0 !important;
+    }
+    
+    .elementor-container {
+        padding: 0 3px !important;
+    }
+    
+    .elementor-element {
+        padding: 2px !important;
+        margin: 2px 0 !important;
+    }
+    
+    .elementor-column {
+        padding: 1px !important;
+    }
+    
+    .elementor-button {
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+    }
+    
+    .elementor-heading-title {
+        font-size: 1.2em !important;
+        margin-bottom: 3px !important;
+    }
+    
+    .elementor-text-editor {
+        font-size: 12px !important;
+    }
+}
+
+/* 5. OPTIMIZACIÓN DE PERFORMANCE */
+@media (max-width: 767px) {
+    /* Reducir animaciones en móvil */
+    .elementor-ken-burns {
+        transition-duration: 0.5s !important;
+    }
+    
+    /* Optimizar transiciones */
+    .elementor-element,
+    .e-con,
+    .elementor-widget-container {
+        transition: all 0.08s ease !important;
+    }
+    
+    /* Reducir efectos de hover en móvil */
+    .elementor-button:hover,
+    .elementor-icon:hover {
+        transform: none !important;
+    }
+    
+    /* Optimizar animaciones de entrada */
+    .elementor-invisible {
+        animation-duration: 0.15s !important;
+    }
+    
+    /* Reducir delays de animación */
+    .elementor-invisible[data-settings*="animation_delay"] {
+        animation-delay: 0.05s !important;
+    }
+    
+    /* Desactivar animaciones complejas en móvil */
+    .elementor-ken-burns,
+    .elementor-parallax {
+        animation: none !important;
+        transform: none !important;
+    }
+}
+
+/* 6. OPTIMIZACIÓN DE FORMULARIOS MÓVILES */
+@media (max-width: 767px) {
+    .elementor-form {
+        padding: 10px !important;
+    }
+    
+    .elementor-field-group {
+        margin-bottom: 6px !important;
+    }
+    
+    .elementor-field-textual {
+        padding: 8px !important;
+        font-size: 13px !important;
+    }
+}
+
+/* 7. OPTIMIZACIÓN DE NAVEGACIÓN MÓVIL */
+@media (max-width: 767px) {
+    .elementor-nav-menu {
+        gap: 5px !important;
+    }
+    
+    .elementor-nav-menu .elementor-item {
+        padding: 6px 10px !important;
+        font-size: 13px !important;
+    }
+    
+    .elementor-menu-toggle {
+        padding: 6px !important;
+    }
+}
+
+/* 8. OPTIMIZACIÓN DE WIDGETS MÓVILES */
+@media (max-width: 767px) {
+    .elementor-widget-icon-list .elementor-icon-list-item {
+        margin-bottom: 4px !important;
+    }
+    
+    .elementor-widget-icon-list .elementor-icon-list-icon {
+        margin-right: 5px !important;
+    }
+    
+    .elementor-widget-social-icons .elementor-social-icon {
+        margin: 3px !important;
+    }
+}
+
+/* 9. OPTIMIZACIÓN DE HERO SECTIONS MÓVILES */
+@media (max-width: 767px) {
+    .elementor-section.elementor-section-height-full {
+        min-height: 50vh !important;
+        padding: 10px 0 !important;
+    }
+    
+    .elementor-section.elementor-section-height-min-height {
+        min-height: 30vh !important;
+    }
+}
+
+/* 10. OPTIMIZACIÓN DE FOOTER MÓVIL */
+@media (max-width: 767px) {
+    .elementor-footer {
+        padding: 10px 0 !important;
+    }
+    
+    .elementor-footer .elementor-widget {
+        margin-bottom: 8px !important;
+    }
+}
+
+/* ========================================
+   FIN DE OPTIMIZACIONES DE PERFORMANCE
+   ======================================== */

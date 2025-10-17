@@ -1,0 +1,27 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 15 Oct 2025 20:21:41 at https://andrara.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://andrara.com/ -O1 "C:\My Web Sites\maqueta1" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+20:22:02	Warning: 	Retry after error -4 (Connect Error) at link https://andrara.com/ (from primary/primary)
+20:22:54	Error: 	"Not Found" (404) at link https://andrara.com/politica-privacidad/ (from https://andrara.com/)
+20:22:57	Warning: 	Moved Permanently for https://andrara.com/?p=49
+20:22:57	Warning: 	File has moved from https://andrara.com/?p=49 to https://andrara.com/paginas-web/
+20:22:57	Warning: 	Moved Permanently for https://andrara.com/?p=50
+20:22:57	Warning: 	File has moved from https://andrara.com/?p=50 to https://andrara.com/video-marketing/
+20:22:57	Warning: 	Moved Permanently for https://andrara.com/?p=41
+20:22:57	Warning: 	File has moved from https://andrara.com/?p=41 to https://andrara.com/servicios/
+20:22:59	Warning: 	Moved Permanently for https://andrara.com/?p=722
+20:22:59	Warning: 	File has moved from https://andrara.com/?p=722 to https://andrara.com/marketing-digital/
+20:22:59	Warning: 	Moved Permanently for https://andrara.com/?p=54
+20:22:59	Warning: 	File has moved from https://andrara.com/?p=54 to https://andrara.com/el-equipo/
+20:22:59	Warning: 	Moved Permanently for https://andrara.com/?p=55
+20:22:59	Warning: 	File has moved from https://andrara.com/?p=55 to https://andrara.com/blog/
+20:22:59	Warning: 	Moved Permanently for https://andrara.com/?p=56
+20:22:59	Warning: 	File has moved from https://andrara.com/?p=56 to https://andrara.com/contacto/
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 22 seconds : 184 links scanned, 174 files written (33531099 bytes overall) [33121351 bytes received at 403918 bytes/sec], 717679 bytes transferred using HTTP compression in 12 files, ratio 25%, 20.3 requests per connection
+(1 errors, 15 warnings, 0 messages)

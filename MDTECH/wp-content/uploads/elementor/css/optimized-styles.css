@@ -1,0 +1,362 @@
+/* ========================================
+   OPTIMIZACIONES VISUALES - ANDRARA.COM
+   ======================================== */
+
+/* 1. OPTIMIZACIÓN DE TRANSICIONES - Más fluidas */
+:root {
+    --fast-transition: 0.3s;
+    --normal-transition: 0.4s;
+    --slow-transition: 0.5s;
+}
+
+/* Reducir todas las transiciones largas */
+.elementor-element,
+.e-con,
+.elementor-widget-container {
+    transition: background var(--fast-transition), 
+                border var(--fast-transition), 
+                box-shadow var(--fast-transition), 
+                transform var(--fast-transition),
+                opacity var(--fast-transition) !important;
+}
+
+/* Optimizar transiciones de hover */
+.elementor-button,
+.elementor-icon,
+.elementor-widget-container {
+    transition: all var(--fast-transition) ease !important;
+}
+
+/* Optimizar animaciones de entrada */
+.elementor-invisible {
+    animation-duration: 0.3s !important;
+}
+
+/* Reducir duración de Ken Burns */
+.elementor-ken-burns {
+    animation-duration: 2s !important;
+}
+
+/* 2. REDUCCIÓN DE ESPACIADO EXCESIVO */
+
+/* Reducir padding excesivo */
+.elementor-element[style*="padding: 30px"],
+.elementor-element[style*="padding: 50px"],
+.elementor-element[style*="padding: 100px"] {
+    padding: 12px !important;
+}
+
+/* Reducir márgenes excesivos */
+.elementor-element[style*="margin: 100px"],
+.elementor-element[style*="margin: 150px"],
+.elementor-element[style*="margin: 200px"] {
+    margin: 20px 0 !important;
+}
+
+/* Optimizar espaciado de secciones */
+.elementor-section {
+    padding: 15px 0 !important;
+}
+
+.elementor-section.elementor-section-boxed {
+    padding: 20px 12px !important;
+}
+
+/* Reducir espaciado entre contenedores */
+.e-con-inner {
+    gap: 10px !important;
+}
+
+/* Optimizar espaciado de columnas */
+.elementor-column {
+    padding: 8px !important;
+}
+
+/* Reducir gaps entre elementos */
+.elementor-column-gap-default {
+    gap: 10px !important;
+}
+
+.elementor-column-gap-narrow {
+    gap: 5px !important;
+}
+
+.elementor-column-gap-extended {
+    gap: 15px !important;
+}
+
+.elementor-column-gap-wide {
+    gap: 20px !important;
+}
+
+/* 3. OPTIMIZACIÓN MÓVIL */
+
+@media (max-width: 767px) {
+    /* Reducir espaciado en móvil */
+    .elementor-element {
+        padding: 10px !important;
+        margin: 15px 0 !important;
+    }
+    
+    /* Eliminar espacios excesivos en móvil */
+    .elementor-section {
+        padding: 15px 0 !important;
+    }
+    
+    /* Optimizar contenedores en móvil */
+    .elementor-container {
+        padding: 0 10px !important;
+    }
+    
+    /* Reducir gaps en móvil */
+    .elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+        padding: 5px !important;
+    }
+    
+    /* Optimizar botones en móvil */
+    .elementor-button {
+        padding: 12px 24px !important;
+        font-size: 14px !important;
+    }
+    
+    /* Reducir espaciado de widgets */
+    .elementor-widget:not(:last-child) {
+        margin-bottom: 15px !important;
+    }
+    
+    /* Optimizar imágenes en móvil */
+    .elementor-image-box-img {
+        margin-bottom: 15px !important;
+    }
+    
+    /* Reducir espaciado de títulos */
+    .elementor-heading-title {
+        margin-bottom: 15px !important;
+    }
+}
+
+/* 4. OPTIMIZACIONES ESPECÍFICAS POR PÁGINA */
+
+/* Marketing Digital */
+.elementor-50 .elementor-element {
+    --padding-top: 15px !important;
+    --padding-bottom: 15px !important;
+    --padding-left: 15px !important;
+    --padding-right: 15px !important;
+}
+
+/* Páginas Web */
+.elementor-722 .elementor-element {
+    --padding-top: 15px !important;
+    --padding-bottom: 15px !important;
+    --padding-left: 15px !important;
+    --padding-right: 15px !important;
+}
+
+/* Video Marketing */
+.elementor-13 .elementor-element {
+    --padding-top: 15px !important;
+    --padding-bottom: 15px !important;
+    --padding-left: 15px !important;
+    --padding-right: 15px !important;
+}
+
+/* 5. OPTIMIZACIÓN DE PERFORMANCE */
+
+/* Reducir animaciones en dispositivos con preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    .elementor-element,
+    .e-con,
+    .elementor-widget-container {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* 6. OPTIMIZACIÓN DE CONTENIDO */
+
+/* Reducir espaciado de listas */
+.elementor-icon-list-item {
+    margin-bottom: 8px !important;
+}
+
+/* Optimizar espaciado de formularios */
+.elementor-field-group {
+    margin-bottom: 15px !important;
+}
+
+/* Reducir espaciado de precios */
+.elementskit-single-pricing {
+    padding: 20px !important;
+}
+
+/* 7. OPTIMIZACIÓN DE GRID Y FLEXBOX */
+
+/* Reducir gaps en grid */
+.elementor-grid {
+    gap: 10px !important;
+}
+
+/* Optimizar flexbox spacing */
+.elementor-widget-wrap {
+    gap: 10px !important;
+}
+
+/* 8. OPTIMIZACIÓN DE BOTONES Y ENLACES */
+
+.elementor-button {
+    transition: all var(--fast-transition) ease !important;
+    padding: 12px 24px !important;
+}
+
+.elementor-button:hover {
+    transform: translateY(-2px) !important;
+}
+
+/* 9. OPTIMIZACIÓN DE IMÁGENES */
+
+.elementor-image-box-img {
+    transition: transform var(--fast-transition) ease !important;
+}
+
+.elementor-image-box-img:hover {
+    transform: scale(1.05) !important;
+}
+
+/* 10. OPTIMIZACIÓN DE NAVEGACIÓN */
+
+/* Reducir espaciado del menú */
+.elementor-nav-menu {
+    gap: 20px !important;
+}
+
+.elementor-nav-menu .elementor-item {
+    padding: 10px 15px !important;
+}
+
+/* 11. OPTIMIZACIÓN DE FOOTER */
+
+.elementor-footer {
+    padding: 30px 0 !important;
+}
+
+/* 12. OPTIMIZACIÓN DE HERO SECTIONS */
+
+.elementor-section.elementor-section-height-full {
+    min-height: 80vh !important;
+    padding: 40px 0 !important;
+}
+
+/* 13. OPTIMIZACIÓN DE CARDS Y TARJETAS */
+
+.elementskit-single-pricing,
+.elementor-widget-container {
+    padding: 20px !important;
+    margin: 10px !important;
+}
+
+/* 14. OPTIMIZACIÓN DE TIPOGRAFÍA */
+
+.elementor-heading-title {
+    line-height: 1.3 !important;
+    margin-bottom: 15px !important;
+}
+
+.elementor-text-editor {
+    line-height: 1.6 !important;
+}
+
+/* 15. OPTIMIZACIÓN DE ESPACIADO RESPONSIVO */
+
+@media (max-width: 1024px) {
+    .elementor-section {
+        padding: 25px 0 !important;
+    }
+    
+    .elementor-element {
+        padding: 12px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .elementor-section {
+        padding: 15px 0 !important;
+    }
+    
+    .elementor-element {
+        padding: 8px !important;
+        margin: 10px 0 !important;
+    }
+    
+    .elementor-button {
+        padding: 10px 20px !important;
+        font-size: 13px !important;
+    }
+}
+
+/* 16. OPTIMIZACIÓN DE LOADING Y PERFORMANCE */
+
+.elementor-background-video-container {
+    transition: opacity var(--fast-transition) !important;
+}
+
+.elementor-ken-burns {
+    transition-duration: 2s !important;
+}
+
+/* 17. OPTIMIZACIÓN DE FORMULARIOS */
+
+.elementor-form {
+    padding: 20px !important;
+}
+
+.elementor-field-group {
+    margin-bottom: 12px !important;
+}
+
+/* 18. OPTIMIZACIÓN DE TESTIMONIOS Y REVIEWS */
+
+.elementor-testimonial {
+    padding: 20px !important;
+    margin: 10px !important;
+}
+
+/* 19. OPTIMIZACIÓN DE GALERÍAS */
+
+.elementor-gallery {
+    gap: 10px !important;
+}
+
+.elementor-gallery-item {
+    margin: 5px !important;
+}
+
+/* 20. OPTIMIZACIÓN FINAL DE ESPACIADO */
+
+/* Aplicar a todos los elementos con espaciado excesivo */
+[style*="padding: 30px"],
+[style*="padding: 50px"],
+[style*="padding: 100px"] {
+    padding: 15px !important;
+}
+
+[style*="margin: 100px"],
+[style*="margin: 150px"],
+[style*="margin: 200px"] {
+    margin: 20px 0 !important;
+}
+
+/* Optimización de contenedores principales */
+.elementor-container {
+    max-width: 1200px !important;
+    padding: 0 15px !important;
+}
+
+/* Optimización de secciones principales */
+.elementor-section-wrap {
+    padding: 0 !important;
+}
+
+/* ========================================
+   FIN DE OPTIMIZACIONES
+   ======================================== */
