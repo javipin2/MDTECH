@@ -715,9 +715,11 @@
 			0% {
 				box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
 			}
+
 			70% {
 				box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
 			}
+
 			100% {
 				box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
 			}
@@ -830,9 +832,11 @@
 			0% {
 				box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
 			}
+
 			70% {
 				box-shadow: 0 0 0 10px rgba(255, 107, 107, 0);
 			}
+
 			100% {
 				box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
 			}
@@ -852,10 +856,48 @@
 			.alerta-mensaje {
 				font-size: 14px;
 			}
+			
+			.nuevo-movil {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
 
-			.alerta-boton {
-				padding: 10px 25px;
-				font-size: 14px;
+			.nuevo-movil-img {
+				align-self: center;
+				padding: 10px;
+				justify-items: end;
+			}
+
+			.nuevo-movil-img img {
+				width: 80%;
+				height: 100%;
+				object-fit: contain;
+			}
+
+			.text-movil{
+				padding: 8px 9px;
+				font-size: 20px;
+
+			}
+		}
+
+		@media (min-width: 769px) {
+			.nuevo-movil {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			.nuevo-movil-img img {
+				align-self: center;
+				width: 200px;
+				padding: 20px;
+				justify-self: self-end;
+			}
+
+			.text-movil {
+				padding: 77px 0;
 			}
 		}
 	</style>
@@ -865,76 +907,78 @@
 	class="home wp-singular page-template page-template-elementor_header_footer page page-id-13 wp-embed-responsive wp-theme-hello-elementor jkit-color-scheme hello-elementor-default elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-13">
 
 	<div data-elementor-type="wp-post" data-elementor-id="33" class="elementor elementor-33">
-		<div class="elementor-element elementor-element-cabc826 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent"
-			data-id="cabc826" data-element_type="container">
-			<div class="e-con-inner">
-				<div class="elementor-element elementor-element-ba7f895 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child"
-					data-id="ba7f895" data-element_type="container">
-					<div class="elementor-element elementor-element-a8d0cfd elementor-widget elementor-widget-image"
-						data-id="a8d0cfd" data-element_type="widget" data-widget_type="image.default">
-						<img fetchpriority="high" width="800" height="800"
-							src="wp-content/uploads/2025/08/logo-blanco-1-1024x1024.png"
-							class="attachment-large size-large wp-image-75" alt="" decoding="async"
-							sizes="(max-width: 800px) 100vw, 800px" />
+		<div class="" style="display: flex; align-items: center; justify-content: space-between;">
+			<div class="" style="display: flex; align-items: center; justify-content: space-between;">
+				<div class="">
+					<div class="nuevo-movil">
+						<div class="nuevo-movil-img">
+							<img fetchpriority="high" width="100" height="100"
+								src="wp-content/uploads/2025/08/logo-blanco-1-1024x1024.png"
+								class="attachment-large size-large wp-image-75" alt="" decoding="async"
+								sizes="(max-width: 800px) 100vw, 800px" />
+						</div>
+						<div>
+							<h1 class="text-movil">MDTECH AGENCIA MARKETING DIGITAL
+							</h1>
+						</div>
 					</div>
 				</div>
-				<div class="elementor-element elementor-element-be46f0b e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child"
-					data-id="be46f0b" data-element_type="container">
-					<div class="elementor-element elementor-element-05c90e7 wpr-main-menu-align-center wpr-pointer-none wpr-main-menu-align--widescreenleft wpr-main-menu-align--laptopleft wpr-main-menu-align--tablet_extraleft wpr-main-menu-align--tabletleft wpr-main-menu-align--mobileleft wpr-sub-icon-caret-down wpr-sub-menu-fx-fade wpr-nav-menu-bp-tablet wpr-mobile-menu-display-dropdown wpr-mobile-menu-full-width wpr-mobile-toggle-v1 wpr-sub-divider-yes wpr-mobile-divider-yes elementor-widget elementor-widget-wpr-mega-menu"
-						data-id="05c90e7" data-element_type="widget"
-						data-settings="{&quot;menu_layout&quot;:&quot;horizontal&quot;}"
-						data-widget_type="wpr-mega-menu.default">
-						<nav class="wpr-nav-menu-container wpr-mega-menu-container wpr-nav-menu-horizontal"
-							data-trigger="hover">
-							<ul id="menu-1-05c90e7" class="wpr-nav-menu wpr-mega-menu">
+			</div>
+			<div class="elementor-element elementor-element-be46f0b e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child"
+				data-id="be46f0b" data-element_type="container">
+				<div class="elementor-element elementor-element-05c90e7 wpr-main-menu-align-center wpr-pointer-none wpr-main-menu-align--widescreenleft wpr-main-menu-align--laptopleft wpr-main-menu-align--tablet_extraleft wpr-main-menu-align--tabletleft wpr-main-menu-align--mobileleft wpr-sub-icon-caret-down wpr-sub-menu-fx-fade wpr-nav-menu-bp-tablet wpr-mobile-menu-display-dropdown wpr-mobile-menu-full-width wpr-mobile-toggle-v1 wpr-sub-divider-yes wpr-mobile-divider-yes elementor-widget elementor-widget-wpr-mega-menu"
+					data-id="05c90e7" data-element_type="widget"
+					data-settings="{&quot;menu_layout&quot;:&quot;horizontal&quot;}"
+					data-widget_type="wpr-mega-menu.default">
+					<nav class="wpr-nav-menu-container wpr-mega-menu-container wpr-nav-menu-horizontal"
+						data-trigger="hover">
+						<ul id="menu-1-05c90e7" class="wpr-nav-menu wpr-mega-menu">
+							<li
+								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-66">
+								<a href="index.html"
+									class="wpr-menu-item wpr-pointer-item wpr-active-menu-item"><span>Inicio</span></a>
+							</li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a
+									href="paginas-web/index.html" class="wpr-menu-item wpr-pointer-item"><span>Páginas
+										web</span></a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a
+									href="video-marketing/index.html" class="wpr-menu-item wpr-pointer-item"><span>Video
+										marketing</span></a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a
+									href="marketing-digital/index.html"
+									class="wpr-menu-item wpr-pointer-item"><span>marketing digital</span></a></li>
+
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a
+									href="contacto/index.html"
+									class="wpr-menu-item wpr-pointer-item"><span>Contacto</span></a></li>
+						</ul>
+					</nav>
+					<nav class="wpr-mobile-nav-menu-container">
+						<div class="wpr-mobile-toggle-wrap">
+							<div class="wpr-mobile-toggle"><span class="wpr-mobile-toggle-line"></span><span
+									class="wpr-mobile-toggle-line"></span><span class="wpr-mobile-toggle-line"></span>
+							</div>
+						</div>
+						<div class="wpr-mobile-mega-menu-wrap " toggle-backface="">
+							<ul id="mobile-menu-2-05c90e7" class="wpr-mobile-nav-menu wpr-mobile-mega-menu">
 								<li
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-66">
-									<a href="index.html"
-										class="wpr-menu-item wpr-pointer-item wpr-active-menu-item"><span>Inicio</span></a>
+									<a href="index.html" class="wpr-mobile-menu-item wpr-active-menu-item">Inicio</a>
 								</li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a
-										href="paginas-web/index.html"
-										class="wpr-menu-item wpr-pointer-item"><span>Páginas web</span></a></li>
+										href="paginas-web/index.html" class="wpr-mobile-menu-item">Páginas web</a>
+								</li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a
-										href="video-marketing/index.html"
-										class="wpr-menu-item wpr-pointer-item"><span>Video marketing</span></a></li>
+										href="video-marketing/index.html" class="wpr-mobile-menu-item">Video
+										marketing</a></li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a
-										href="marketing-digital/index.html"
-										class="wpr-menu-item wpr-pointer-item"><span>marketing digital</span></a></li>
-
+										href="marketing-digital/index.html" class="wpr-mobile-menu-item">
+										marketing digital</a></li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a
-										href="contacto/index.html"
-										class="wpr-menu-item wpr-pointer-item"><span>Contacto</span></a></li>
+										href="contacto/index.html" class="wpr-mobile-menu-item">Contacto</a></li>
 							</ul>
-						</nav>
-						<nav class="wpr-mobile-nav-menu-container">
-							<div class="wpr-mobile-toggle-wrap">
-								<div class="wpr-mobile-toggle"><span class="wpr-mobile-toggle-line"></span><span
-										class="wpr-mobile-toggle-line"></span><span
-										class="wpr-mobile-toggle-line"></span></div>
-							</div>
-							<div class="wpr-mobile-mega-menu-wrap " toggle-backface="">
-								<ul id="mobile-menu-2-05c90e7" class="wpr-mobile-nav-menu wpr-mobile-mega-menu">
-									<li
-										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-66">
-										<a href="index.html"
-											class="wpr-mobile-menu-item wpr-active-menu-item">Inicio</a>
-									</li>
-									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a
-											href="paginas-web/index.html" class="wpr-mobile-menu-item">Páginas web</a>
-									</li>
-									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a
-											href="video-marketing/index.html" class="wpr-mobile-menu-item">Video
-											marketing</a></li>
-									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a
-											href="marketing-digital/index.html" class="wpr-mobile-menu-item">
-											marketing digital</a></li>
-									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a
-											href="contacto/index.html" class="wpr-mobile-menu-item">Contacto</a></li>
-								</ul>
-							</div>
-						</nav>
-					</div>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -948,11 +992,7 @@
 					<div class="elementor-element elementor-element-960ef2 e-con-full animated-slow e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible e-con e-child"
 						data-id="960ef2" data-element_type="container"
 						data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:&quot;500&quot;}">
-						<div class="elementor-element elementor-element-42d42d32 elementor-widget__width-initial elementor-widget elementor-widget-heading"
-							data-id="42d42d32" data-element_type="widget" data-widget_type="heading.default">
-							<h1 class="elementor-heading-title elementor-size-default">MDTECH AGENCIA MARKETING DIGITAL
-							</h1>
-						</div>
+
 					</div>
 					<div class="elementor-element elementor-element-46a8fcaf e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child"
 						data-id="46a8fcaf" data-element_type="container"
@@ -972,8 +1012,8 @@
 									</div>
 									<div class="elementor-element elementor-element-c77b736 elementor-widget elementor-widget-heading"
 										data-id="c77b736" data-element_type="widget" data-widget_type="heading.default">
-										<h6 class="elementor-heading-title elementor-size-default">Campañas que generan
-											clientes reales</h6>
+										<h6 class="elementor-heading-title elementor-size-default">MAS DE 10 AÑOS
+											CREANDO MARCAS QUE VENDEN</h6>
 									</div>
 								</div>
 							</div>
@@ -995,12 +1035,13 @@
 															class="icon icon-right-arrow"></i></div>
 													<div class="content">
 														<div class="number-wrapper"><span class="prefix">+</span>
-															<span class="number" data-value="1000000"
+															<span class="number" data-value="100"
 																data-animation-duration="3500">0</span>
-															<span class="suffix">€</span>
 														</div>
-														<h2 class="title">Invertidos en Ads Experiencia gestionando
-															campañas en Google &amp; Meta</h2>
+														<strong>
+															<h1 class="title">CLIENTES SATISFECHOS CON NUESTROS
+																SERVICIOS</h2>
+														</strong>
 													</div>
 												</div>
 											</div>
@@ -1072,39 +1113,6 @@
 								</div>
 								<div class="elementor-element elementor-element-3be85dc1 elementor-view-default elementor-widget elementor-widget-icon"
 									data-id="3be85dc1" data-element_type="widget" data-widget_type="icon.default">
-									<div class="elementor-icon-wrapper">
-										<a class="elementor-icon" href="#">
-											<i aria-hidden="true" class="icon icon-right-arrow"></i> </a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="elementor-element elementor-element-4f1ff4b6 e-con-full animated-slow e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible e-con e-child"
-						data-id="4f1ff4b6" data-element_type="container"
-						data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:&quot;500&quot;}">
-						<div class="elementor-element elementor-element-7a83a61a e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child"
-							data-id="7a83a61a" data-element_type="container"
-							data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						</div>
-						<div class="elementor-element elementor-element-1497f017 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child"
-							data-id="1497f017" data-element_type="container">
-							<div class="elementor-element elementor-element-10976bf2 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child"
-								data-id="10976bf2" data-element_type="container">
-								<div class="elementor-element elementor-element-12fbfa7 elementor-widget elementor-widget-heading"
-									data-id="12fbfa7" data-element_type="widget" data-widget_type="heading.default">
-									<h6 class="elementor-heading-title elementor-size-default">Google Ads</h6>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-7ea017b5 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child"
-								data-id="7ea017b5" data-element_type="container">
-								<div class="elementor-element elementor-element-5ec76e0 elementor-widget__width-initial elementor-widget elementor-widget-heading"
-									data-id="5ec76e0" data-element_type="widget" data-widget_type="heading.default">
-									<h5 class="elementor-heading-title elementor-size-default">Campañas con más de 1M €
-										gestionados</h5>
-								</div>
-								<div class="elementor-element elementor-element-661d70b1 elementor-view-default elementor-widget elementor-widget-icon"
-									data-id="661d70b1" data-element_type="widget" data-widget_type="icon.default">
 									<div class="elementor-icon-wrapper">
 										<a class="elementor-icon" href="#">
 											<i aria-hidden="true" class="icon icon-right-arrow"></i> </a>
@@ -1260,27 +1268,6 @@
 							data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						</div>
 					</div>
-					<div class="elementor-element elementor-element-24873868 e-con-full animated-slow e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible e-con e-child"
-						data-id="24873868" data-element_type="container"
-						data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;animation_delay&quot;:&quot;200&quot;}">
-						<div class="elementor-element elementor-element-80056ef elementor-widget__width-initial elementor-widget-laptop__width-initial elementor-widget elementor-widget-heading"
-							data-id="80056ef" data-element_type="widget" data-widget_type="heading.default">
-							<h5 class="elementor-heading-title elementor-size-default">Marketing Digital 360°</h5>
-						</div>
-						<div class="elementor-element elementor-element-8b69360 elementor-widget__width-initial elementor-widget-laptop__width-initial elementor-widget elementor-widget-heading"
-							data-id="8b69360" data-element_type="widget" data-widget_type="heading.default">
-							<h2 class="elementor-heading-title elementor-size-default">Más de 10 años creando marcas que
-								venden</h2>
-						</div>
-						<div class="elementor-element elementor-element-2c2a2507 elementor-widget elementor-widget-text-editor"
-							data-id="2c2a2507" data-element_type="widget" data-widget_type="text-editor.default">
-							<p data-start="474" data-end="787">En MDTECH acumulamos más de una década creando
-								estrategias de marketing digital, gestionando campañas en Google Ads y Meta con
-								inversiones que superan el millón de euros. Nuestra experiencia en distintos sectores
-								nos permite diseñar acciones eficaces, ajustadas a cada negocio y orientadas a
-								resultados reales.</p>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -1376,8 +1363,7 @@
 													<div class="elementor-image-box-content">
 														<h5 class="elementor-image-box-title">Costes optimizados</h5>
 														<p class="elementor-image-box-description">Servicios de alto
-															nivel sin extras innecesarios. Lo barato también puede salir
-															bueno.</p>
+															nivel sin extras innecesarios.</p>
 													</div>
 												</div>
 											</div>
@@ -1440,7 +1426,6 @@
 													data-id="7ba0d4f" data-element_type="widget"
 													data-widget_type="text-editor.default">
 													<div class="elementor-widget-container">
-														<p><strong>En MDTECH lo barato sale bueno… </strong></p>
 														<p>En nuestra agencia intentamos <strong>reducir
 																costes</strong> para ofrecer <strong>servicios de
 																publicidad</strong> sin extras innecesarios, pero con la
@@ -1540,54 +1525,6 @@
 									</div>
 								</div>
 							</div>
-							<div class="elementor-element elementor-element-d20388e jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-								data-id="d20388e" data-element_type="widget" data-widget_type="jkit_icon_box.default">
-								<div
-									class="jeg-elementor-kit jkit-icon-box icon-position-top elementor-animation- jeg_module_13_5_68f048bc1b0aa">
-									<div class="jkit-icon-box-wrapper hover-from-left">
-										<div class="icon-box icon-box-header elementor-animation-">
-											<div class="icon style-color"></div>
-										</div>
-										<div class="icon-box icon-box-body">
-											<h5 class="title">Google Ads</h5>
-											<p class="icon-box-description">Las campañas que más venden</p>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-d8fc678 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-								data-id="d8fc678" data-element_type="widget" data-widget_type="jkit_icon_box.default">
-								<div
-									class="jeg-elementor-kit jkit-icon-box icon-position-top elementor-animation- jeg_module_13_6_68f048bc1b5a1">
-									<div class="jkit-icon-box-wrapper hover-from-left">
-										<div class="icon-box icon-box-header elementor-animation-">
-											<div class="icon style-color"></div>
-										</div>
-										<div class="icon-box icon-box-body">
-											<h5 class="title">Periódicos Digitales</h5>
-											<p class="icon-box-description">Publicidad en periódicos y blogs</p>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-9219362 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-								data-id="9219362" data-element_type="widget" data-widget_type="jkit_icon_box.default">
-								<div
-									class="jeg-elementor-kit jkit-icon-box icon-position-top elementor-animation- jeg_module_13_7_68f048bc1ba91">
-									<div class="jkit-icon-box-wrapper hover-from-left">
-										<div class="icon-box icon-box-header elementor-animation-">
-											<div class="icon style-color"></div>
-										</div>
-										<div class="icon-box icon-box-body">
-											<h5 class="title">Email Marketing</h5>
-											<p class="icon-box-description">Canales de tráfico</p>
-										</div>
-
-									</div>
-								</div>
-							</div>
 							<div class="elementor-element elementor-element-ce9fd4e jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
 								data-id="ce9fd4e" data-element_type="widget" data-widget_type="jkit_icon_box.default">
 								<div
@@ -1620,22 +1557,6 @@
 									</div>
 								</div>
 							</div>
-							<div class="elementor-element elementor-element-8a54712 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-								data-id="8a54712" data-element_type="widget" data-widget_type="jkit_icon_box.default">
-								<div
-									class="jeg-elementor-kit jkit-icon-box icon-position-top elementor-animation- jeg_module_13_10_68f048bc1c97c">
-									<div class="jkit-icon-box-wrapper hover-from-left">
-										<div class="icon-box icon-box-header elementor-animation-">
-											<div class="icon style-color"></div>
-										</div>
-										<div class="icon-box icon-box-body">
-											<h5 class="title">SEO</h5>
-											<p class="icon-box-description">Tráfico orgánico</p>
-										</div>
-
-									</div>
-								</div>
-							</div>
 							<div class="elementor-element elementor-element-afc1c17 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
 								data-id="afc1c17" data-element_type="widget" data-widget_type="jkit_icon_box.default">
 								<div
@@ -1647,22 +1568,6 @@
 										<div class="icon-box icon-box-body">
 											<h5 class="title">Facebook Ads</h5>
 											<p class="icon-box-description">Anuncios en Facebook e Instagram</p>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-4b04c00 jkit-equal-height-disable elementor-widget elementor-widget-jkit_icon_box"
-								data-id="4b04c00" data-element_type="widget" data-widget_type="jkit_icon_box.default">
-								<div
-									class="jeg-elementor-kit jkit-icon-box icon-position-top elementor-animation- jeg_module_13_12_68f048bc1d38f">
-									<div class="jkit-icon-box-wrapper hover-from-left">
-										<div class="icon-box icon-box-header elementor-animation-">
-											<div class="icon style-color"></div>
-										</div>
-										<div class="icon-box icon-box-body">
-											<h5 class="title">Televisión</h5>
-											<p class="icon-box-description">Cada vez más asequible</p>
 										</div>
 
 									</div>
@@ -1736,10 +1641,18 @@
 			<div class="header-content">
 				<div class="rating-badge">
 					<svg class="google-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
-						<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
-						<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
-						<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
+						<path
+							d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+							fill="#4285F4" />
+						<path
+							d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+							fill="#34A853" />
+						<path
+							d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+							fill="#FBBC05" />
+						<path
+							d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+							fill="#EA4335" />
 					</svg>
 					<span class="rating-text">EXCELENTE REPUTACIÓN</span>
 				</div>
@@ -1756,7 +1669,8 @@
 			</div>
 
 			<div class="button-container">
-				<a href="https://www.google.com/search?q=MDtech+Dise%C3%B1os+y+Proyectos#lrd=0x8e8ab9ccf1da6f93:0x21e732dd665626f7,1" target="_blank" class="review-button" >Escribir una reseña</a>
+				<a href="https://www.google.com/search?q=MDtech+Dise%C3%B1os+y+Proyectos#lrd=0x8e8ab9ccf1da6f93:0x21e732dd665626f7,1"
+					target="_blank" class="review-button">Escribir una reseña</a>
 			</div>
 		</section>
 		<div class="elementor-element elementor-element-612c2dd4 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent"
@@ -2094,62 +2008,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="elementor-element elementor-element-3f77861 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent"
-			data-id="3f77861" data-element_type="container">
-			<div class="e-con-inner">
-				<div class="elementor-element elementor-element-b817ba9 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child"
-					data-id="b817ba9" data-element_type="container">
-					<div class="elementor-element elementor-element-bf407f1 e-con-full animated-slow e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no elementor-invisible e-con e-child"
-						data-id="bf407f1" data-element_type="container"
-						data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:{&quot;2&quot;:{&quot;id&quot;:&quot;26&quot;,&quot;url&quot;:&quot;https:\/\/andrara.com\/wp-content\/uploads\/2025\/08\/female-mechanic-working-on-motorcycle-in-workshop-2022-03-07-23-56-26-utc.jpg&quot;}},&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;,&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:2000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:200,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;in&quot;}">
-						<div class="elementor-element elementor-element-514321b elementor-widget elementor-widget-image"
-							data-id="514321b" data-element_type="widget" data-widget_type="image.default">
-							<img loading="lazy" decoding="async" width="800" height="592"
-								src="wp-content/uploads/2025/08/41329-1024x758.jpg"
-								class="attachment-large size-large wp-image-449" alt=""
-								srcset="https://andrara.com/wp-content/uploads/2025/08/41329-1024x758.jpg 1024w, https://andrara.com/wp-content/uploads/2025/08/41329-300x222.jpg 300w, https://andrara.com/wp-content/uploads/2025/08/41329-768x568.jpg 768w, https://andrara.com/wp-content/uploads/2025/08/41329-1536x1137.jpg 1536w, https://andrara.com/wp-content/uploads/2025/08/41329.jpg 2000w"
-								sizes="(max-width: 800px) 100vw, 800px" />
-						</div>
-					</div>
-					<div class="elementor-element elementor-element-132e572 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child"
-						data-id="132e572" data-element_type="container">
-						<div class="elementor-element elementor-element-7f2c83a e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child"
-							data-id="7f2c83a" data-element_type="container">
-							<div class="elementor-element elementor-element-074446d elementor-widget elementor-widget-heading"
-								data-id="074446d" data-element_type="widget" data-widget_type="heading.default">
-								<h2 class="elementor-heading-title elementor-size-default">O envíanos un mensaje de
-									Whatsapp</h2>
-							</div>
-							<div class="elementor-element elementor-element-3595bc9 elementor-widget-laptop__width-initial elementor-widget elementor-widget-text-editor"
-								data-id="3595bc9" data-element_type="widget" data-widget_type="text-editor.default">
-								<section
-									class="elementor-section elementor-top-section elementor-element elementor-element-85136ac elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-									data-id="85136ac" data-element_type="section">
-									<div class="elementor-container elementor-column-gap-default">
-										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7006af0"
-											data-id="7006af0" data-element_type="column">
-											<div class="elementor-widget-wrap elementor-element-populated">
-												<div class="elementor-element elementor-element-7ba0d4f elementor-widget elementor-widget-text-editor"
-													data-id="7ba0d4f" data-element_type="widget"
-													data-widget_type="text-editor.default">
-													<div class="elementor-widget-container">
-														<p>Con un pequeño resumen de lo que estás buscando. Nos puedes
-															enviar un mensaje de voz si te es más fácil. No importa la
-															hora o el día, no nos molestas, este es un teléfono de
-															empresa. Te contestaremos en de lunes a viernes de 9.00h a
-															19.00h.</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</section>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 	<div data-elementor-type="wp-post" data-elementor-id="399" class="elementor elementor-399">
 		<div class="elementor-element elementor-element-7ab5c830 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent"
@@ -2227,8 +2085,8 @@
 											</a>
 										</li>
 										<li class="elementor-repeater-item-1e89cea">
-											<a href="https://www.facebook.com/133590716512770?ref=pl_edit_xav_ig_profile_page_web" target="_blank" aria-label="Facebook"
-												class="f">
+											<a href="https://www.facebook.com/133590716512770?ref=pl_edit_xav_ig_profile_page_web"
+												target="_blank" aria-label="Facebook" class="f">
 
 												<svg aria-hidden="true" class="e-font-icon-svg e-fab-facebook-f"
 													viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
@@ -2251,8 +2109,8 @@
 											</a>
 										</li>
 										<li class="elementor-repeater-item-d75382b">
-											<a href="https://wa.me/573158222107" target="_blank"
-												aria-label="Whatsapp" class="instagram">
+											<a href="https://wa.me/573158222107" target="_blank" aria-label="Whatsapp"
+												class="instagram">
 
 												<svg aria-hidden="true" class="e-font-icon-svg e-fab-whatsapp"
 													viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
@@ -2419,13 +2277,11 @@
 		id="wpr-modal-popups-js-js"></script>
 
 	<!-- Botón flotante de WhatsApp -->
-	<a href="https://wa.me/573158222107?text=Hola%20MDTECH,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" 
-	   class="whatsapp-float" 
-	   target="_blank" 
-	   rel="noopener noreferrer"
-	   aria-label="Contactar por WhatsApp">
+	<a href="https://wa.me/573158222107?text=Hola%20MDTECH,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios"
+		class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
 		<svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-			<path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+			<path
+				d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
 		</svg>
 	</a>
 
@@ -2434,12 +2290,14 @@
 		<div class="alerta-contenido">
 			<div class="alerta-icono">
 				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-					<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+					<path
+						d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
 				</svg>
 			</div>
 			<div class="alerta-titulo">⚠️ Aceptación Requerida</div>
 			<div class="alerta-mensaje">
-				Por favor, acepta la <strong>Política de Privacidad</strong> y el <strong>consentimiento para recibir información</strong> antes de continuar.
+				Por favor, acepta la <strong>Política de Privacidad</strong> y el <strong>consentimiento para recibir
+					información</strong> antes de continuar.
 			</div>
 			<button class="alerta-boton" onclick="cerrarAlerta()">Entendido</button>
 		</div>
@@ -2460,7 +2318,7 @@
 		}
 
 		// Cerrar alerta al hacer clic fuera del contenido
-		document.addEventListener('click', function(e) {
+		document.addEventListener('click', function (e) {
 			const alerta = document.getElementById('alerta-privacidad');
 			if (e.target === alerta) {
 				cerrarAlerta();
@@ -2468,7 +2326,7 @@
 		});
 
 		// Cerrar alerta con tecla Escape
-		document.addEventListener('keydown', function(e) {
+		document.addEventListener('keydown', function (e) {
 			if (e.key === 'Escape') {
 				cerrarAlerta();
 			}
@@ -2482,22 +2340,22 @@
 			const telefono = document.querySelector('input[name="Telefono"]')?.value || '';
 			const web = document.querySelector('input[name="Web"]')?.value || '';
 			const mensaje = document.querySelector('textarea[name="Mensaje"]')?.value || '';
-			
+
 			// Verificar que los checkboxes obligatorios estén marcados
 			const checkboxes = document.querySelectorAll('input[name="Privacidad"][type="checkbox"]');
 			let todosMarcados = true;
-			
+
 			checkboxes.forEach(checkbox => {
 				if (!checkbox.checked) {
 					todosMarcados = false;
 				}
 			});
-			
+
 			if (!todosMarcados) {
 				mostrarAlertaPrivacidad();
 				return;
 			}
-			
+
 			// Crear el mensaje para WhatsApp
 			let mensajeWhatsApp = 'Hola MDTECH, me interesa conocer más sobre sus servicios.\n\n';
 			mensajeWhatsApp += '*Datos de contacto:*\n';
@@ -2506,20 +2364,20 @@
 			if (telefono) mensajeWhatsApp += `• Teléfono: ${telefono}\n`;
 			if (web) mensajeWhatsApp += `• Web: ${web}\n`;
 			if (mensaje) mensajeWhatsApp += `• Mensaje: ${mensaje}\n`;
-			
+
 			// Codificar el mensaje para URL
 			const mensajeCodificado = encodeURIComponent(mensajeWhatsApp);
-			
+
 			// Redirigir a WhatsApp
 			window.open(`https://wa.me/573158222107?text=${mensajeCodificado}`, '_blank');
 		}
 
 		// Esperar a que el DOM esté listo
-		document.addEventListener('DOMContentLoaded', function() {
+		document.addEventListener('DOMContentLoaded', function () {
 			// Buscar el botón y agregar el evento
 			const whatsappBtn = document.getElementById('whatsapp-form-btn');
 			if (whatsappBtn) {
-				whatsappBtn.addEventListener('click', function(e) {
+				whatsappBtn.addEventListener('click', function (e) {
 					e.preventDefault();
 					e.stopPropagation();
 					enviarAWhatsApp();
@@ -2528,11 +2386,11 @@
 		});
 
 		// También intentar después de un pequeño delay por si el DOM se carga después
-		setTimeout(function() {
+		setTimeout(function () {
 			const whatsappBtn = document.getElementById('whatsapp-form-btn');
 			if (whatsappBtn && !whatsappBtn.hasAttribute('data-whatsapp-listener')) {
 				whatsappBtn.setAttribute('data-whatsapp-listener', 'true');
-				whatsappBtn.addEventListener('click', function(e) {
+				whatsappBtn.addEventListener('click', function (e) {
 					e.preventDefault();
 					e.stopPropagation();
 					enviarAWhatsApp();
