@@ -186,9 +186,7 @@
 }
 
 /* Reducir espaciado de precios */
-.elementskit-single-pricing {
-    padding: 20px !important;
-}
+
 
 /* 7. OPTIMIZACIÓN DE GRID Y FLEXBOX */
 
@@ -249,11 +247,7 @@
 
 /* 13. OPTIMIZACIÓN DE CARDS Y TARJETAS */
 
-.elementskit-single-pricing,
-.elementor-widget-container {
-    padding: 20px !important;
-    margin: 10px !important;
-}
+
 
 /* 14. OPTIMIZACIÓN DE TIPOGRAFÍA */
 

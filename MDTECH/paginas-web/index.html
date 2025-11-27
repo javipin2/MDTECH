@@ -43,6 +43,231 @@
 	<link rel="stylesheet" href="../wp-content/uploads/elementor/css/mobile-optimizations.css" />
 	<link rel="stylesheet" href="../wp-content/uploads/elementor/css/performance-optimizations.css" />
 	<link rel="stylesheet" href="../wp-content/uploads/elementor/css/scroll-optimizations.css" />
+	<style id="mdtech-black-friday-tapes">
+		.elementor-widget-elementskit-pricing .elementor-widget-container,
+		.elementor-widget-elementskit-pricing .ekit-wid-con {
+			padding: 0 !important;
+			background: transparent !important;
+			height: 100%;
+		}
+
+		.elementor-widget-elementskit-pricing .ekit-wid-con>div {
+			height: 100%;
+		}
+
+		.bf-tape-card {
+			position: relative;
+			overflow: hidden;
+			padding: 3rem 2.2rem 2.8rem;
+			background: linear-gradient(180deg, #050505 0%, #101010 60%, #1b1b1b 100%);
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			-webkit-box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
+			box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
+			color: #fff;
+			isolation: isolate;
+		}
+
+		.bf-tape-card::before,
+		.bf-tape-card::after {
+			content: "BLACK FRIDAY • BLACK FRIDAY • BLACK FRIDAY";
+			position: absolute;
+			left: -35%;
+			width: 170%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0.5rem 0;
+			background: linear-gradient(90deg, #ff2b2b, #ff7a00);
+			color: #fff;
+			font-weight: 800;
+			text-transform: uppercase;
+			letter-spacing: 0.35em;
+			font-size: 0.82rem;
+			border-radius: 999px;
+			-webkit-box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+			box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+			pointer-events: none;
+			z-index: 0;
+		}
+
+		.bf-tape-card::before {
+			top: 32px;
+			transform: rotate(-14deg);
+		}
+
+		.bf-tape-card::after {
+			bottom: 28px;
+			transform: rotate(13deg);
+		}
+
+		.bf-theme-gold {
+			background: linear-gradient(180deg, #020202 0%, #1b1003 35%, #ffb347 100%);
+		}
+
+		.bf-theme-steel {
+			background: linear-gradient(180deg, #03060a 0%, #0f1b2d 40%, #6da0ff 100%);
+		}
+
+		.bf-theme-slate {
+			background: linear-gradient(180deg, #030609 0%, #111f34 40%, #7aa7ff 100%);
+		}
+
+		.bf-tape-card::before,
+		.bf-tape-card::after {
+			background: linear-gradient(90deg, #ff2b2b, #ff6a00);
+		}
+
+		.bf-tape-card::before {
+			box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+		}
+
+		.bf-tape-card .elementskit-pricing-header,
+		.bf-tape-card .elementskit-pricing-content,
+		.bf-tape-card .elementskit-pricing-price,
+		.bf-tape-card .elementskit-pricing-subtitle,
+		.bf-tape-card .elementskit-pricing-lists li {
+			color: #fff;
+			position: relative;
+			z-index: 1;
+		}
+
+		.bf-tape-card .elementskit-pricing-btn {
+			position: relative;
+			z-index: 1;
+			background: linear-gradient(90deg, #ff3131, #ff7a00);
+			border: none;
+			-webkit-box-shadow: 0 15px 30px rgba(255, 65, 54, 0.35);
+			box-shadow: 0 15px 30px rgba(255, 65, 54, 0.35);
+		}
+
+		.bf-label {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0.15rem 1rem;
+			border: 5px solid rgb(255 255 255);
+			border-radius: 999px;
+			letter-spacing: 0.25em;
+			font-size: 0.78rem;
+			text-transform: uppercase;
+			margin-bottom: 0.5rem;
+			color: #ffffff;
+			font-weight: bolder;
+			background: #000000;
+		}
+
+		.bf-deal {
+			display: block;
+			font-size: 2.15rem;
+			font-weight: 800;
+			letter-spacing: 0.08em;
+			text-align: center;
+			margin-bottom: 0.1rem;
+			padding: 15% 0 15% 0;
+		}
+
+		.bf-subtitle {
+			display: block;
+			text-align: center;
+			font-size: 0.95rem;
+			margin-bottom: 1rem;
+			color: rgba(255, 255, 255, 0.7);
+			position: relative;
+			z-index: 1;
+		}
+
+		.bf-original-price {
+			display: block;
+			text-align: center;
+			margin-top: 0.8rem;
+			margin-bottom: 1.2rem;
+			position: relative;
+			z-index: 1;
+		}
+
+		.bf-original-price .bf-price-strikethrough {
+			color: #b8b8b8;
+			font-size: 1.4rem;
+			font-weight: 600;
+			position: relative;
+			display: inline-block;
+		}
+
+		.bf-original-price .bf-price-strikethrough::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+			height: 3px;
+			background: #b8b8b8;
+			transform: rotate(-12deg);
+			transform-origin: center;
+		}
+
+		.bf-original-price .bf-price-strikethrough .currency {
+			font-size: 0.9rem;
+			vertical-align: super;
+		}
+
+		.elementskit-single-pricing.bf-tape-card {
+			min-height: 100%;
+		}
+
+		@media (max-width: 1200px) {
+			.bf-tape-card {
+				padding: 2rem 1.5rem 2.2rem;
+			}
+
+			.bf-tape-card::before,
+			.bf-tape-card::after {
+				letter-spacing: 0.25em;
+				font-size: 0.75rem;
+				left: -40%;
+				width: 180%;
+			}
+
+			.bf-tape-card::before {
+				top: 26px;
+			}
+
+			.bf-tape-card::after {
+				bottom: 22px;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.bf-tape-card {
+				padding: 2rem 1.3rem;
+			}
+
+			.bf-tape-card::before,
+			.bf-tape-card::after {
+				font-size: 0.68rem;
+				letter-spacing: 0.18em;
+				width: 190%;
+				left: -45%;
+			}
+
+			.bf-tape-card::before {
+				top: 18px;
+				transform: rotate(-12deg);
+			}
+
+			.bf-tape-card::after {
+				bottom: 16px;
+				transform: rotate(11deg);
+			}
+
+			.bf-deal {
+				font-size: 1.7rem;
+			}
+
+			.bf-original-price .bf-price-strikethrough {
+				font-size: 1.2rem;
+			}
+		}
+	</style>
 
 	<style id='global-styles-inline-css'>
 		:root {
@@ -591,10 +816,12 @@
 	<style id="wp-custom-css">
 		.boton_new .metform-btn {
 			-webkit-box-shadow: 0 0px 0px 0 rgba(66, 133, 244, .3);
+			box-shadow: 0 0px 0px 0 rgba(66, 133, 244, .3);
 		}
 
 		.metform-btn {
 			-webkit-box-shadow: 0 0px 0px 0 rgba(66, 133, 244, .3);
+			box-shadow: 0 0px 0px 0 rgba(66, 133, 244, .3);
 		}
 	</style>
 	<style id="wpr_lightbox_styles">
@@ -968,7 +1195,8 @@
 								</li>
 								<li
 									class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-50 current_page_item menu-item-72">
-									<a href="../paginas-web/index.html" class="wpr-mobile-menu-item wpr-active-menu-item">
+									<a href="../paginas-web/index.html"
+										class="wpr-mobile-menu-item wpr-active-menu-item">
 										Páginas web</a>
 								</li>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a
@@ -1156,8 +1384,10 @@
 								<div class="elementor-widget-container">
 									<div class="ekit-wid-con">
 
-										<div class="elementskit-single-pricing ">
+										<div class="elementskit-single-pricing bf-tape-card bf-theme-gold">
 											<div class="elementskit-pricing-header ">
+												<span class="bf-label">Black Friday</span>
+												<span class="bf-deal">Landing</span>
 
 												<h3 class=" elementskit-pricing-title">Landing Page </h3>
 												<p class=" elementskit-pricing-subtitle">Página única, directa y
@@ -1166,9 +1396,15 @@
 											<div class=" elementskit-pricing-price-wraper has-tag ">
 												<div class="elementskit-pricing-tag"></div>
 												<span class="elementskit-pricing-price">
-													<span>300</span>
+													<span>260</span>
 													<sup class="currency">Є</sup>
 
+												</span>
+											</div>
+											<div class="bf-original-price">
+												<span class="bf-price-strikethrough">
+													<span>325</span>
+													<sup class="currency">Є</sup>
 												</span>
 											</div>
 											<div class="elementskit-pricing-content ">
@@ -1213,8 +1449,10 @@
 								<div class="elementor-widget-container">
 									<div class="ekit-wid-con">
 
-										<div class="elementskit-single-pricing ">
+										<div class="elementskit-single-pricing bf-tape-card bf-theme-steel">
 											<div class="elementskit-pricing-header ">
+												<span class="bf-label">Black Friday</span>
+												<span class="bf-deal">Corporate</span>
 
 												<h3 class=" elementskit-pricing-title">Web Corporativa </h3>
 												<p class=" elementskit-pricing-subtitle">Sitio completo con secciones
@@ -1223,9 +1461,15 @@
 											<div class=" elementskit-pricing-price-wraper has-tag ">
 												<div class="elementskit-pricing-tag"></div>
 												<span class="elementskit-pricing-price">
-													<span>550</span>
+													<span>400</span>
 													<sup class="currency">Є</sup>
 
+												</span>
+											</div>
+											<div class="bf-original-price">
+												<span class="bf-price-strikethrough">
+													<span>533</span>
+													<sup class="currency">Є</sup>
 												</span>
 											</div>
 											<div class="elementskit-pricing-content ">
@@ -1270,8 +1514,11 @@
 								<div class="elementor-widget-container">
 									<div class="ekit-wid-con">
 
-										<div class="elementskit-single-pricing ">
+										<div class="elementskit-single-pricing bf-tape-card bf-theme-slate">
+
 											<div class="elementskit-pricing-header ">
+												<span class="bf-label">Black Friday</span>
+												<span class="bf-deal">Ecommerce</span>
 
 												<h3 class=" elementskit-pricing-title">Tienda Online </h3>
 												<p class=" elementskit-pricing-subtitle">E-commerce profesional con
@@ -1280,9 +1527,15 @@
 											<div class=" elementskit-pricing-price-wraper has-tag ">
 												<div class="elementskit-pricing-tag"></div>
 												<span class="elementskit-pricing-price">
-													<span>800</span>
+													<span>700</span>
 													<sup class="currency">Є</sup>
 
+												</span>
+											</div>
+											<div class="bf-original-price">
+												<span class="bf-price-strikethrough">
+													<span>1000</span>
+													<sup class="currency">Є</sup>
 												</span>
 											</div>
 											<div class="elementskit-pricing-content ">
@@ -2169,7 +2422,7 @@
 
 		// Funciones para los botones de precios
 		function enviarWhatsAppLandingPage() {
-			const mensaje = 'Hola MDTECH, me interesa el plan de *Landing Page* (300€).\n\n' +
+			const mensaje = 'Hola MDTECH, me interesa el plan de *Landing Page* (260€).\n\n' +
 				'*Características que me interesan:*\n' +
 				'• Página única (one-page)\n' +
 				'• Textos incluidos\n' +
@@ -2183,7 +2436,7 @@
 		}
 
 		function enviarWhatsAppWebCorporativa() {
-			const mensaje = 'Hola MDTECH, me interesa el plan de *Web Corporativa* (550€).\n\n' +
+			const mensaje = 'Hola MDTECH, me interesa el plan de *Web Corporativa* (400€).\n\n' +
 				'*Características que me interesan:*\n' +
 				'• Hasta 5 secciones\n' +
 				'• Textos incluidos\n' +
@@ -2197,7 +2450,7 @@
 		}
 
 		function enviarWhatsAppTiendaOnline() {
-			const mensaje = 'Hola MDTECH, me interesa el plan de *Tienda Online* (800).\n\n' +
+			const mensaje = 'Hola MDTECH, me interesa el plan de *Tienda Online* (700).\n\n' +
 				'*Características que me interesan:*\n' +
 				'• WooCommerce completo\n' +
 				'• Gestión de productos\n' +
