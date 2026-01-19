@@ -1415,6 +1415,7 @@
 	text-transform: var(--e-global-typography-4cd8123-text-transform);
 	line-height: var(--e-global-typography-4cd8123-line-height);
 	vertical-align: baseline;
+	
 }
 
 .elementor-49 .elementor-element.elementor-element-6fb156b5 .elementskit-single-pricing .elementskit-pricing-price-wraper.has-tag .elementskit-pricing-price {
@@ -2225,11 +2226,13 @@ body.elementor-page-49>.elementor-motion-effects-container>.elementor-motion-eff
 	.elementor-49 .elementor-element.elementor-element-1705b969 .elementskit-single-pricing .elementskit-pricing-price-wraper.has-tag .elementskit-pricing-price span {
 		font-size: var(--e-global-typography-4cd8123-font-size);
 		line-height: var(--e-global-typography-4cd8123-line-height);
+		font-size: 9vh;
 	}
 
 	.elementor-49 .elementor-element.elementor-element-1705b969 .elementskit-single-pricing .elementskit-pricing-price-wraper.has-tag .elementskit-pricing-price sup.currency {
 		font-size: var(--e-global-typography-4cd8123-font-size);
 		line-height: var(--e-global-typography-4cd8123-line-height);
+		font-size: 60%;
 	}
 
 	.elementor-49 .elementor-element.elementor-element-f3e5e53 .elementskit-single-pricing .elementskit-pricing-header .elementskit-pricing-subtitle {
@@ -2239,11 +2242,13 @@ body.elementor-page-49>.elementor-motion-effects-container>.elementor-motion-eff
 	.elementor-49 .elementor-element.elementor-element-f3e5e53 .elementskit-single-pricing .elementskit-pricing-price-wraper.has-tag .elementskit-pricing-price span {
 		font-size: var(--e-global-typography-4cd8123-font-size);
 		line-height: var(--e-global-typography-4cd8123-line-height);
+		font-size: 9vh;
 	}
 
 	.elementor-49 .elementor-element.elementor-element-f3e5e53 .elementskit-single-pricing .elementskit-pricing-price-wraper.has-tag .elementskit-pricing-price sup.currency {
 		font-size: var(--e-global-typography-4cd8123-font-size);
 		line-height: var(--e-global-typography-4cd8123-line-height);
+		font-size: 60%;
 	}
 
 	.elementor-49 .elementor-element.elementor-element-6fb156b5 .elementskit-single-pricing .elementskit-pricing-header .elementskit-pricing-subtitle {
@@ -2253,11 +2258,13 @@ body.elementor-page-49>.elementor-motion-effects-container>.elementor-motion-eff
 	.elementor-49 .elementor-element.elementor-element-6fb156b5 .elementskit-single-pricing .elementskit-pricing-price-wraper.has-tag .elementskit-pricing-price span {
 		font-size: var(--e-global-typography-4cd8123-font-size);
 		line-height: var(--e-global-typography-4cd8123-line-height);
+		font-size: 9vh;
 	}
 
 	.elementor-49 .elementor-element.elementor-element-6fb156b5 .elementskit-single-pricing .elementskit-pricing-price-wraper.has-tag .elementskit-pricing-price sup.currency {
 		font-size: var(--e-global-typography-4cd8123-font-size);
 		line-height: var(--e-global-typography-4cd8123-line-height);
+		font-size: 60%;
 	}
 
 	.elementor-49 .elementor-element.elementor-element-5aaff17 {
@@ -2464,6 +2471,7 @@ body.elementor-page-49>.elementor-motion-effects-container>.elementor-motion-eff
 	.elementor-49 .elementor-element.elementor-element-1705b969 .elementskit-single-pricing .elementskit-pricing-price-wraper.has-tag .elementskit-pricing-price sup.currency {
 		font-size: var(--e-global-typography-4cd8123-font-size);
 		line-height: var(--e-global-typography-4cd8123-line-height);
+		
 	}
 
 	.elementor-49 .elementor-element.elementor-element-f3e5e53 {
@@ -2502,6 +2510,7 @@ body.elementor-page-49>.elementor-motion-effects-container>.elementor-motion-eff
 	.elementor-49 .elementor-element.elementor-element-6fb156b5 .elementskit-single-pricing .elementskit-pricing-price-wraper.has-tag .elementskit-pricing-price sup.currency {
 		font-size: var(--e-global-typography-4cd8123-font-size);
 		line-height: var(--e-global-typography-4cd8123-line-height);
+		
 	}
 
 	.elementor-49 .elementor-element.elementor-element-5aaff17 .elementor-heading-title {
